@@ -6,16 +6,16 @@ export UTS_PASSWORD=*Eureka.82
 export CAS_LOGIN_URL=https://utslogin.nlm.nih.gov/cas/login
 export CAS_LOGOUT_URL=https://utslogin.nlm.nih.gov:443/cas/logout
 
-export DOWNLOAD_URL=$1
+export DOWNLOAD_URL=https://download.nlm.nih.gov/umls/kss/rxnorm/RxNorm_full_current.zip
 export BROWSER_USER_AGENT="Firefox/18.0"
 export COOKIE_FILE=uts-cookie.txt
 export NLM_CACERT=uts.nlm.nih.gov.crt
 
-if [ $# -eq 0 ]; then echo "Usage: curl-uts-downloads.sh  download_url "
-                      echo "  e.g.   curl-uts-download.sh https://download.nlm.nih.gov/umls/kss/rxnorm/RxNorm_full_current.zip"
-                      echo "         curl-uts-download.sh https://download.nlm.nih.gov/umls/kss/rxnorm/RxNorm_weekly_current.zip"
-   exit
-fi
+#if [ $# -eq 0 ]; then echo "Usage: curl-uts-downloads.sh  download_url "
+#                      echo "  e.g.   curl-uts-download.sh https://download.nlm.nih.gov/umls/kss/rxnorm/RxNorm_full_current.zip"
+#                      echo "         curl-uts-download.sh https://download.nlm.nih.gov/umls/kss/rxnorm/RxNorm_weekly_current.zip"
+#   exit
+#fi
 
 # Remove old uts auth cookie if exists
 if [ -f uts-cookie.txt ]; then
