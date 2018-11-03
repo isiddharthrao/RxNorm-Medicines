@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export UTS_USERNAME=ravindrajore
-export UTS_PASSWORD=*Eureka.82
+export UTS_USERNAME=abcdefgh
+export UTS_PASSWORD=abcdefgh
 
 export CAS_LOGIN_URL=https://utslogin.nlm.nih.gov/cas/login
 export CAS_LOGOUT_URL=https://utslogin.nlm.nih.gov:443/cas/logout
